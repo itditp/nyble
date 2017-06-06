@@ -1,0 +1,28 @@
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    //- bower:css
+    link(rel='stylesheet', href='/lib/bootstrap/dist/css/bootstrap.css')
+    link(rel='stylesheet', href='/lib/font-awesome/css/font-awesome.min.css')
+    //- endbower
+    
+    //- bower:js
+    script(src='/lib/jquery/dist/jquery.js')
+    script(src='/lib/bootstrap/dist/js/bootstrap.js')
+    //- endbower
+    
+    //- inject:css
+    link(rel="stylesheet", href="/css/styles.css")
+    //- endinject
+    
+    //- inject:js
+    script(src="/js/app.js")
+    //- endinject
+    title Error
+  body
+    h1= message
+    h2= error.status
+    pre #{error.stack}
