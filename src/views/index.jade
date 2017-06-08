@@ -19,9 +19,10 @@ html
   head
     title MyApp
   body
-    h1= title
-    p Welcome to #{title}
-    div(class='container')
-        p kvjwnvjkew vekwlmvlkewmvlkew lewvknvlkew
+    form(name="searchFirstName", action="/server/", method="post")
+        div(class='input-group container')
+            input(type="text", name="firstName", id="firstName", class="form-control", placeholder="type firstname...")
+            span(class='input-group-btn')
+                button(class="btn btn-secondary", type="submit") Send
     
 
