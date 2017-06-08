@@ -30,12 +30,12 @@ router.route('/')
         };
         connection.query('SELECT * FROM user WHERE firstName = ?', name.firstName, function (error, results, fields) {
             var answer = {};
-            var userId = results[0].id;
             if (error) {
                 throw error;
             }
             if (results.length >= 1) {
                 console.log('user exists');
+                var userId = results[0].id;
                 var w = doc.pipe(fs.createWriteStream('out.pdf'));
 
                 w.on('close', function () {
