@@ -9,7 +9,7 @@ a. генерит pdf файл вида firstName + lastName + image
 4. сохраняет pdf файл в поле pdf базы данных- возвращает пользователю результат   в виде JSON (true/false).
 ```
 ```sh
-git clone https://github.com/itditp/nyble.git && cd nybl
+git clone https://github.com/itditp/nyble.git && cd nyble
 npm install
 bower install
 gulp serve
